@@ -1,26 +1,23 @@
 import React from 'react';
 import './App.css';
 
+import Resume from './pages/Resume';
+import contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import aboutMe from './pages/AboutMe';
+import Header from './components/header';
+import Footer from './components/footer';
+
 function App() {
   return (
     <div className="App">
-        <div className="navBar">
-          <div className="header">Basil Davis</div>
-          <a href="/Portfolio.js">Portfolio</a>
-          <a href="/AboutMe.js">About Me</a>
-          <a href="/Resume.js">Resume</a>
-          <a href="/Contact.js">Contact</a>
+      <div className="flex-column justify-flex-start min-100-vh">
+        <Header />
+        <div className="container">
+          <aboutMe />,
         </div>
-
-      <div className="welcome">
-        <h2>Welcome to my Portfolio</h2>
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+        <Footer />
       </div>
-
-      <footer>
-        <div>GitHub</div>
-        <div>LinkedIn</div>
-      </footer>
     </div>
   );
 }
