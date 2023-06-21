@@ -3,9 +3,15 @@ import '../App.css';
 
 const Header = () => {
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
-          <h1 className="m-0">Basil's portfolio</h1>
+    <header className="header">
+      <div className="title">
+        <h1>Basil's portfolio</h1>
+      </div>
+      <div className="nav-links">
+        <button>about me</button>
+        <button>portfolio</button>
+        <button>resume</button>
+        <button>contact me</button>
       </div>
     </header>
   );
