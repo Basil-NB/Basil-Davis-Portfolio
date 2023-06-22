@@ -4,14 +4,12 @@ import '../App.css';
 const Header = () => {
   return (
     <header className="header">
-      <div className="title">
-        <h1>Basil's portfolio</h1>
-      </div>
-      <div className="nav-links">
-        <button>about me</button>
-        <button>portfolio</button>
-        <button>resume</button>
-        <button>contact me</button>
+      <h1>Basil's portfolio</h1>
+      <div className='buttons'>
+        <button id='btn1'>about me</button>
+        <button id='btn2'>portfolio</button>
+        <button id='btn3'>resume</button>
+        <button id='btn4'>contact me</button>
       </div>
     </header>
   );

@@ -1,0 +1,57 @@
+/* app.js css */
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* header css */
+.header {
+    background-color: plum;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    padding: 5%;
+    margin-right: 150px;
+    font-size: 50px;
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+    display: flex;
+    display: inline;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 10px;
+    background-color: transparent;
+    height: 50px;
+    width: 150px;
+    font-size: larger;
+}
+
+/* footer css */
+
+.footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* about me css */
+
+.about {
+    display: flex;
+    justify-content: center;
+}

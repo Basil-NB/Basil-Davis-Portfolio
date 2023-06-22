@@ -3,13 +3,14 @@ import './App.css';
 
 import Header from './components/header';
 import Footer from './components/footer';
+import About from './components/AboutMe';
 
 function App() {
   return (
     <div>
       <Header />
       <div className="container">
-        blahblahblahblahblahblash
+        <About />
       </div>
       <Footer />
     </div>
