@@ -1,13 +1,21 @@
 /* app.js css */
-
 .container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background: #676d4f;
+    background-position: center;
+    background-size: cover;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+
+
 /* header css */
 .header {
-    background-color: plum;
+    background-color: #363d2c;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +31,10 @@ h1 {
     font-size: 50px;
 }
 
-#btn1, #btn2, #btn3, #btn4 {
+#btn1,
+#btn2,
+#btn3,
+#btn4 {
     display: flex;
     display: inline;
     flex-wrap: wrap;
@@ -48,10 +59,114 @@ h1 {
     align-items: center;
 }
 
-
 /* about me css */
 
 .about {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.pfp-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pfp-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.about-p {
+    background-color: #f2f2f2;
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 50px;
+    width: 400px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* contact me ccs */
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c3c5ad;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* portfolio css */
+
+.card-1,
+.card-2 {
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-1 {
+    background-image: url("./images/paws\ plus.JPG");
+}
+
+.card-2 {
+    background-image: url("./images/health\ hive.JPG");
 }
