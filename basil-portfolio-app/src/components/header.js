@@ -1,15 +1,16 @@
 import React from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header className="header">
       <h1>Basil's portfolio</h1>
       <div className='buttons'>
-        <button id='btn1'>about me</button>
-        <button id='btn2'>portfolio</button>
-        <button id='btn3'>resume</button>
-        <button id='btn4'>contact me</button>
+        <Link to="/" id='btn1'>About Me</Link>
+        <Link to="/Portfolio" id='btn2'>Portfolio</Link>
+        <Link to="/Contact" id='btn4'>Contact Me</Link>
+        <Link to="/Resume" id='btn4'>Contact Me</Link>
       </div>
     </header>
   );
