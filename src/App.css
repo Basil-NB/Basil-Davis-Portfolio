@@ -1,8 +1,17 @@
 /* app.js css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
     padding: 5%;
+    box-sizing: border-box;
+    /* Include padding and border in element dimensions */
     background: #676d4f;
     background-position: center;
     background-size: cover;
@@ -25,10 +34,14 @@
     align-items: center;
 }
 
-h1 {
-    padding: 5%;
-    margin-right: 150px;
-    font-size: 50px;
+.tag {
+    flex: 0 0 auto;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.tag img {
+    width: 250px;
 }
 
 #btn1,
@@ -38,16 +51,17 @@ h1 {
     display: flex;
     display: inline;
     flex-wrap: wrap;
-    margin: 30px;
+    margin: 50px;
     padding: 10px;
-    background-color: transparent;
-    height: 50px;
+    height: 100px;
     width: 150px;
     font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
 }
 
 /* footer css */
-
 .footer {
     background-color: black;
     position: fixed;
@@ -60,7 +74,6 @@ h1 {
 }
 
 /* about me css */
-
 .about {
     display: flex;
     justify-content: center;
@@ -75,8 +88,8 @@ h1 {
 }
 
 .pfp-card img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -87,14 +100,13 @@ h1 {
     border: 2px solid black;
     padding: 50px;
     border-radius: 50px;
-    width: 400px;
+    width: 500px;
     margin-left: 50px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* contact me ccs */
-
 .contact-form {
     max-width: 800px;
     margin: 0 auto;
@@ -150,23 +162,32 @@ h1 {
 }
 
 /* portfolio css */
-
-.card-1,
-.card-2 {
+.portfolio {
+    display: flex;
+    flex-direction: column; /* Display cards in a column */
+    align-items: center;
+    justify-content: space-between; /* Space cards evenly along the column */
+    height: 100vh; /* Set a specific height for the column if needed */
+    padding: 20px;
+  }
+  
+  .card {
     border: 2px solid black;
-    padding: 50px;
-    border-radius: 10px;
-    width: 300px;
-    height: 200px;
-    margin: 20px;
+    border-radius: 5%;
+    padding: 20px;
     text-align: center;
+    margin: 10px 0;
+    background-color: white;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+  }
+  
+  .description {
+    margin-top: 10px;
     font-size: 20px;
-}
-
-.card-1 {
-    background-image: url("./images/paws\ plus.JPG");
-}
-
-.card-2 {
-    background-image: url("./images/health\ hive.JPG");
-}
+  }
