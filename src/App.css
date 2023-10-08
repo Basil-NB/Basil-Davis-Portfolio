@@ -73,6 +73,17 @@ body {
     align-items: center;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer button {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+}
+
 /* about me css */
 .about {
     display: flex;
@@ -164,30 +175,38 @@ body {
 /* portfolio css */
 .portfolio {
     display: flex;
-    flex-direction: column; /* Display cards in a column */
+    flex-direction: column;
+    /* Display cards in a column */
     align-items: center;
-    justify-content: space-between; /* Space cards evenly along the column */
-    height: 100vh; /* Set a specific height for the column if needed */
+    justify-content: space-between;
+    /* Space cards evenly along the column */
+    height: 100vh;
+    /* Set a specific height for the column if needed */
     padding: 20px;
-  }
-  
-  .card {
+}
+
+.card {
     border: 2px solid black;
     border-radius: 5%;
     padding: 20px;
     text-align: center;
     margin: 10px 0;
     background-color: white;
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     height: auto;
     object-fit: cover;
     max-height: 300px;
-  }
-  
-  .description {
+}
+
+.description {
     margin-top: 10px;
     font-size: 20px;
-  }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
